@@ -132,6 +132,8 @@ class RTFM(commands.Cog):
 
     @commands.Cog.listener()
     async def on_ready(self):
+        if hasattr(self, '_rtfm_cache'):
+            return
         page_types = {
             'latest': 'https://discordpy.readthedocs.io/en/latest',
             'latest-jp': 'https://discordpy.readthedocs.io/ja/latest',
