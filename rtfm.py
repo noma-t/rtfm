@@ -1,3 +1,8 @@
+# Copyright (c) 2021 Aomi Vel
+# Released under the MIT license
+# https://opensource.org/licenses/mit-license.php
+
+
 from discord.ext import commands
 import discord
 import re
